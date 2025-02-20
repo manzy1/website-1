@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+background-image: url(img/pic3.jpg);
+background-position: center;
+background-size: cover;
+height: 107px;
+background-repeat: no-repeat;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #007bff; /* Dark blue background */
+    color: white;
+}
+
+/* Navigation Styles */
+.navbar {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    background: linear-gradient(135deg, #007bff, #004b87); /* Gradient background */
+    padding: 15px 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.navbar-content {
+    display: flex;
+    align-items: center;
+}
+
+
+.navbar ul {
+    list-style: none;
+    display:inline-flex;
+    margin-right: 30px; /* Additional spacing for nav items */
+}
+
+.navbar li {
+    margin: 0 20px; /* Space between nav items */
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.navbar ul li:hover {
+    background-color: rgba(255, 204, 0, 0.2);
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+.navbar .fa {
+    margin-right: 8px;
+}
+
+.container h1{
+    text-align: center;
+    color: black; /* Bright accent color */
+    font-size: 2rem;
+    margin-left: 100px;
+    margin-right: 30px; /* Spacing between title and nav items */
+    margin-top: 10px;
+}
+.container p{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.search-container {
+    display: flex;
+    justify-content: flex-end; /* Moves search box to the right */
+    width: 100%; /* Makes sure it spans the full width */
+}
+
+.search {
+    display: flex;
+    align-items: center; /* Aligns input and button vertically */
+    gap: 5px; /* Reduces space between input and button */
+}
+
+.srch {
+    width: 150px; /* Reduce input width */
+    height: 30px; /* Reduce height */
+    padding: 5px;
+    font-size: 14px;
+}
+
+.btn {
+    height: 30px; /* Match input height */
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+/* Content Styles */
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px); /* Adjust height based on navbar */
+    padding: 20px;
+}
+
+.animated-text {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 300; /* Lighter font weight for elegance */
+    overflow: hidden; /* Hide overflow for the animation */
+    white-space: nowrap; /* Prevent text from wrapping */
+    color: #ffcc00; /* Bright text color */
+    animation: rewrite 10s infinite; /* Continuous rewriting animation */
+    opacity: 0;
+    animation: fadeIn 1s forwards, rewrite 10s infinite 1s; /* Fade in effect */
+}
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes rewrite {
+    0% {
+        content: " ";
+    }
+    20% {
+        content: "Spatial Elite Consultancy is a Malawi registered company.";
+    }
+    40% {
+        content: "Spatial Elite Consultancy is a leading provider of geomatics solutions.";
+    }
+    60% {
+        content: "Spatial Elite Consultancy specializes in architecture, land surveying, and data analysis.";
+    }
+    80% {
+        content: "Offering research writing, IT solutions, and short course training.";
+    }
+    100% {
+        content: "Spatial Elite Consultancy is a Malawi registered company.";
+    }
+}
+.service-card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+.service-icon {
+    font-size: 40px;
+    color: #007bff;
+}
+.card-body {
+    background: white;
+    padding: 20px;
+    border-radius: 0 0 15px 15px;
+}
+.social-media {
+    text-align: center;
+    margin-top: 20px;
+}
+.container{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    position: relative;
+}
+.container h1{
+font-family:'Times New Roman';
+font-size: 50px;
+padding-left: 20px;
+margin-top: 9px;
+letter-spacing: 2px;
+color: black;
+}
+.container .par{
+padding-left:20px;
+padding-bottom: 25px;
+font-family: Arial;
+letter-spacing: 1.2px;
+line-height: 30px;
+color: black;
+}
+.container .cn{
+    width: 160px;
+    height: 40px;
+    background: white;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+}
+.container .cn a{
+    text-decoration: none;
+    color: black;
+    transition: .3s ease;
+}
+.social-media a {
+    margin: 0 10px;
+    color: #333;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+.social-media a:hover {
+    color: #0077b5; /* Change color on hover */
+}
